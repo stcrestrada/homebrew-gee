@@ -5,21 +5,21 @@
 class Gee < Formula
   desc "Efficiently Manage Multiple Git Repositories."
   homepage "https://github.com/stcrestrada/gee"
-  version "2.4.0"
+  version "2.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stcrestrada/gee/releases/download/v2.4.0/gee_2.4.0_darwin_amd64.tar.gz"
-      sha256 "c675a9f05b011b72e40d8b56af5681553cfdb3b2e5c9cea543f4a2a1edb1a7cd"
+      url "https://github.com/stcrestrada/gee/releases/download/v2.4.1/gee_2.4.1_darwin_amd64.tar.gz"
+      sha256 "91f027f2ece980eb75b573908992280af288b6327553ad11971ce21f4d22b152"
 
       define_method(:install) do
         bin.install "gee"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stcrestrada/gee/releases/download/v2.4.0/gee_2.4.0_darwin_arm64.tar.gz"
-      sha256 "977b17122f25ba47983a0caf941607aee6db8ea24bfb20cdfbdf13b51b12a492"
+      url "https://github.com/stcrestrada/gee/releases/download/v2.4.1/gee_2.4.1_darwin_arm64.tar.gz"
+      sha256 "be0255916c0099c20202b0fb3a8e8ff2e663e82b8d688a7e94c39c80f3365d2d"
 
       define_method(:install) do
         bin.install "gee"
@@ -29,15 +29,15 @@ class Gee < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stcrestrada/gee/releases/download/v2.4.0/gee_2.4.0_linux_amd64.tar.gz"
-      sha256 "624e4fbb74e9bba4a09856a821ca76bddbd6b14115a0630e66b53003ab1f20df"
+      url "https://github.com/stcrestrada/gee/releases/download/v2.4.1/gee_2.4.1_linux_amd64.tar.gz"
+      sha256 "d14b823c28b68c6e42efca4a8d65aac90ad2e3a42186a7ecfad87ebb7df23e5b"
       define_method(:install) do
         bin.install "gee"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stcrestrada/gee/releases/download/v2.4.0/gee_2.4.0_linux_arm64.tar.gz"
-      sha256 "27c258cab7ef542c65582263ed5fb55033636356fc012d40579eb06968344254"
+      url "https://github.com/stcrestrada/gee/releases/download/v2.4.1/gee_2.4.1_linux_arm64.tar.gz"
+      sha256 "720b95b6f9e81ef719cd0fb7ea1c5a916f695be885437a7b75ee794e1a3dbe59"
       define_method(:install) do
         bin.install "gee"
       end
